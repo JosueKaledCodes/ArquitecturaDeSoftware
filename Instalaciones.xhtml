@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./Template.xhtml">
+
+            <ui:define name="content">
+                <p:growl id="msgs" showDetail="true" />
+                <center><h2>
+                    <h:outputLabel for="name" style="color: orange" value="Instalaciones" />
+                    </h2>
+                </center>
+                <br></br>
+                <p:fieldset legend="Luar Restaurante" style="margin-bottom:20px">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <p:graphicImage value="/images/rest2.jpg" />
+                        <h:outputText
+                            value="Disfruta con nosotros cada mañana de un rico buffet donde 
+                            encontrarás una gran variedad de platillos nacionales; por la tarde 
+                            y noche deleita a tu paladar con el exclusivo sabor de la cocina mediterránea 
+                            con un toque mexicano, pero si estás buscando pasar una tarde agradable,
+                            Luar te ofrece nuestras tardes pasteleras con una amplia variedad de deliciosos 
+                            postres y bocadillos que podrás acompañar con un rico café al compás de una 
+                            agradable música" />
+                    </h:panelGrid>
+                </p:fieldset>
+                
+                <p:fieldset legend="Nenos club" style="margin-bottom:20px">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <p:graphicImage value="/images/sala.gif" />
+                        <h:outputText
+                            value="Un área diseñada para los príncipes de la casa, 
+                            para su entretenimiento y seguridad mientras los papás 
+                            disfrutan una agradable estancia." />
+                    </h:panelGrid>
+                </p:fieldset>
+                
+                <p:fieldset legend="La Biblioteca" style="margin-bottom:20px">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <p:graphicImage value="/images/biblioteca.gif" />
+                        <h:outputText
+                            value="Área dedicada para el relax y la cultura, un espacio privado, 
+                            confortable y bien equipado donde podrá disfrutar de un buen libro 
+                            acompañado de una espectacular vista, un buen café o si así lo desea, 
+                            de una copa de su vino favorito directo desde nuestro bar." />
+                    </h:panelGrid>
+                </p:fieldset>
+                
+                <p:fieldset legend="Gimnasio" style="margin-bottom:20px">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <p:graphicImage value="/images/gym.jpg" />
+                        <h:outputText
+                            value="Gimnasio equipado y baño de vapor.." />
+                    </h:panelGrid>
+                </p:fieldset>
+               
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
