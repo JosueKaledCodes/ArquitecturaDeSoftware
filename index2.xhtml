@@ -2,14 +2,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
 
     <body>
 
         <ui:composition template="./Template.xhtml">
+            <ui:define name="content">
+            <div class="rows">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10">
+                        <center><h2>
+                        <h:outputLabel for="titulo" style="color: orange" value="BIENVENIDO A SU HOTEL MAJIG" />
+                    </h2>
+                </center>
+                        <h:form>
+                            <p:panel id="panel" header=" " style="margin-bottom:10px;" visible="true">
+                                <p:messages id="messages" />
+                                <h:panelGrid >
+                                    <h:outputLabel for="usuario" value="Usuario:" />
+                                    <p:inputText id="usuario" required="true" placeholder="Usuario" /><br></br>
 
-            
+                                    <h:outputLabel for="pass" value="Password:" />
+                                    <p:inputText id="pass" type="password"  required="true" placeholder="Password" /><br></br>
 
+                               </h:panelGrid>
+                            </p:panel>
+
+                            <p:commandButton value="INGRESAR" onclick="entrar"  update="panel"  />
+                        </h:form>
+                    </div>
+                    <div class="col-lg-1"></div>
+
+                </div>    
+            </ui:define>
         </ui:composition>
 
     </body>

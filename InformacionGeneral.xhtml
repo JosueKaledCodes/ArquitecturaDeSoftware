@@ -10,44 +10,45 @@
         <ui:composition template="./Template.xhtml">
 
             <ui:define name="content">
-                
-            <h:form>
-           
-            <p:growl id="msgs" showDetail="true" />
- 
-            <p:panel id="basic" header="Misión" footer="El Hotel MAJIG es Tu mejor opcion" style="margin-bottom:20px">
-                <h:panelGrid columns="2" cellpadding="10">
-            <p:graphicImage value="/images/vista.jpg" />
-            
-            <h:outputText
-                value="Una principal: Que el cliente se sienta cómodo y tranquilo:/n 
-                La Mision del Hotel MAJIG es lograr convertirseen el refugio del viajero que
-                viene a cumplir su sueño de conocer la maravillosa playa de Veracruz, o del viajero que quiere descansar 
-                después de haber concluido sus actividades y negocios.
-                Y en un nivel secundario ser la mejor cadena en cada mercado en que estemos presentes, con las mas 
-                extensa linea de hoteles de tres a cinco estrellas" />
-            </h:panelGrid>
-            </p:panel>
-            </h:form>
-                
-            <h:form>
-           
-            <p:growl id="msgs" showDetail="true" />
- 
-            <p:panel id="basic" header="Visión" footer="Simplemente el hotel de tus sueños" style="margin-bottom:20px">
-            <h:panelGrid columns="2" cellpadding="10">
-            <p:graphicImage value="/images/vistas.jpg" />
-            <h:outputText value="El Hotel MAJIG tiene la visión de lograr un liderazgo dentro del grupo de hoteles del mismo nivel. 
-                Tenemos la visión de ser el mejor hotel en nuestro medio, y como tal ubicarnos como el preferido de nuestros turistas.
-                La calidad de servicio esta basada en los años de experiencia adquiridos por los propietarios, socios y trabajadores.
-                manteniendonos siempre 5 años adelante de la competencia, mediante la innovacion constante en las operaciones, infraestructura, 
-                programas para el desarrollo de nuestro recurso humano." />
-            </h:panelGrid>
-            </p:panel>
-            </h:form>
-                
-                
-                
+                <center><h2>
+                        <h:outputLabel for="name" style="color: orange" value="Información General" />
+                    </h2>
+                </center>
+                <h:form>
+
+                    <p:growl id="msgs" showDetail="true" />
+
+                    <p:panel id="basic" header="Misión" footer="El Hotel MAJIG es Tu mejor opción" style="margin-bottom:20px">
+                        <h:panelGrid columns="2" cellpadding="10">
+                            <p:graphicImage value="/images/vista.jpg" />
+
+                            <h:outputText
+                                value="Una principal: Que el cliente se sienta cómodo y tranquilo:
+                                La Mision del Hotel MAJIG es lograr convertirseen el refugio del viajero que
+                                viene a cumplir su sueño de conocer la maravillosa playa de Veracruz, o del viajero que quiere descansar 
+                                después de haber concluido sus actividades y negocios.
+                                Y en un nivel secundario ser la mejor cadena en cada mercado en que estemos presentes, con las mas 
+                                extensa linea de hoteles de tres a cinco estrellas" />
+                        </h:panelGrid>
+                    </p:panel>
+                </h:form>
+
+                <h:form>
+
+                    <p:growl id="msgs" showDetail="true" />
+
+                    <p:panel id="basic" header="Visión" footer="Simplemente el hotel de tus sueños" style="margin-bottom:20px">
+                        <h:panelGrid columns="2" cellpadding="10">
+                            <p:graphicImage value="/images/vistas.jpg" />
+                            <h:outputText value="El Hotel MAJIG tiene la visión de lograr un liderazgo dentro del grupo de hoteles del mismo nivel. 
+                                          Tenemos la visión de ser el mejor hotel en nuestro medio, y como tal ubicarnos como el preferido de nuestros turistas.
+                                          La calidad de servicio esta basada en los años de experiencia adquiridos por los propietarios, socios y trabajadores.
+                                          manteniendonos siempre 5 años adelante de la competencia, mediante la innovacion constante en las operaciones, infraestructura, 
+                                          programas para el desarrollo de nuestro recurso humano." />
+                        </h:panelGrid>
+                    </p:panel>
+                </h:form>
+
             </ui:define>
 
         </ui:composition>
